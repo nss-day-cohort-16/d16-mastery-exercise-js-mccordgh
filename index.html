@@ -2,26 +2,22 @@
 <html>
 <head>
 	<title>JS Mastery Quiz</title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-	<div style="margin:0,auto;width:100%;">
-		<form>
+	<body>
+		
+		<div id="wrapper">
 			<h1>
-				Desired line height: <input type="number" name="txtLineHeight" id="txtLineHeight" value="12" style="width:100px;height:40px;font-size:20px;margin:50px;text-align:center"onkeypress="if (event.keyCode == 13) { 
-						document.getElementById('btnGrowTree').click();
-						}">
+				Desired line height: <input type="number" id="txtLineHeight" value="10">
 				
-				Desired line character: <input type="text" name="txtLineChar" id="txtLineChar" value="*" maxlength="1" style="width:50px;height:40px;font-size:20px;margin:50px;text-align:center" onkeypress="if (event.keyCode == 13) { 
-						document.getElementById('btnGrowTree').click();
-						}">
+				Desired line character: <input type="text" id="txtLineChar" maxlength="1" value="@">
 				
-				<button type="button" name="btnGrowTree" id="btnGrowTree" style="width:100px;height:100px;font-size:20px;margin:50px;text-align:center" onclick="tree({height: parseInt(document.getElementById('txtLineHeight').value), char: document.getElementById('txtLineChar').value});">
+				<button type="button" name="btnGrowTree" id="btnGrowTree">
 					Grow Your Tree!
 				</button>
-
 			</h1>
-		</form>
-	</div>
-<script src="quiz.js"></script>
-</body>
+		</div>
+		
+		<script src="js/quiz.js"></script>
+	</body>
 </html>
